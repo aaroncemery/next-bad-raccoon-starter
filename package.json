@@ -11,14 +11,16 @@
   "homepage": "",
   "engines": {
     "node": ">=16.18.1",
-    "yarn": ">=1.22.17",
+    "yarn": ">=1.22.19",
     "npm": "please use yarn"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "18.14.2",
@@ -37,6 +39,7 @@
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.3",
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.2.7",
+    "husky": "^8.0.0"
   }
 }
